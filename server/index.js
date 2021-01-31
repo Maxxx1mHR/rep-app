@@ -31,11 +31,5 @@ db.connect((err)=>{
 //Выполнение ответов сервера
 app.get("/",(request,response)=>{
 
-    const sqlInsert = "INSERT INTO movie_reviews (movieName, movieReview) VALUES ('Harry Potter','Good movie')";
-    db.query(sqlInsert,(err,result)=>{
-        console.log(err);
-        console.log(result);
-
-        response.send("HELLO");
-    });
 });
+
